@@ -1,4 +1,4 @@
 terraform.tfstate
 3-tier/.terraform
 3-tier/.terraform.lock.hcl
-3-tier/.terraform.tfstate.lock
+3-tier/.terraform.tfstate.lock.info
