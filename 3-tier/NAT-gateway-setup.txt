@@ -1,0 +1,20 @@
+Create VPC
+2 Subnets- Public and Private
+Internet Gateway
+attach to VPC
+create route table for Public and Private
+add internet gateway to route Public route table and assocaite Public Subnets
+create E-IP, create NAT gateway and keep connectivity type = Public, allocate EIP
+associate NAT with Private RT and associate Private SB to PRivate Route table
+
+2 instance Public and Private
+Pub Ec2-
+add pub subnet, public IP, ssh
+connect ssh, chmod 400, 
+
+Local server copy key and paste into pub ec2 and try ssh -i ".pem" ubuntu@private_IP
+
+Private Ec2
+add private IP and ssh
+
+

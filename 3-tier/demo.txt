@@ -1,0 +1,15 @@
+Project setup and installation
+Create the Django app and configure settings
+Database models
+Admin panel configuration
+Forms
+URL routing
+Views
+Authentication (login/logout)
+Base template and navigation
+Home and dashboard pages
+Student management (CRUD)
+Teacher, class, and subject management
+Attendance, exams, results, and fees
+Styling with Bootstrap and custom CSS
+Testing and deployment
