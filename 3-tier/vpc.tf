@@ -108,7 +108,7 @@ resource "aws_route_table_association" "private-subnet-app-association" {
 
 #private Subnet for DB Tier
 resource "aws_subnet" "private-subnet-db1" {
-  vpc_id            = aws_vpc.VPC-3-tier.id
+  vpc_id = aws_vpc.VPC-3-tier.id
   cidr_block        = "10.0.3.0/24"
   availability_zone = "us-east-1a"
     tags = {
@@ -118,15 +118,13 @@ resource "aws_subnet" "private-subnet-db1" {
 
 
 resource "aws_subnet" "private-subnet-db2" {
-  vpc_id            = aws_vpc.VPC-3-tier.id
+  vpc_id = aws_vpc.VPC-3-tier.id
   cidr_block        = "10.0.4.0/24"
   availability_zone = "us-east-1b"
   tags = {
     Name = "private-subnet-db2"
   } 
 }
-
-
 
 resource "aws_route_table" "db_rt" {
   vpc_id = aws_vpc.VPC-3-tier.id

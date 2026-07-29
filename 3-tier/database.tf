@@ -16,9 +16,8 @@ resource "aws_db_instance" "mydb" {
 
 
 
-
 resource "aws_db_subnet_group" "db_subnet_group" {
-  name       = "mydb-subnet-group"
+  name       = "mydb-subnet-group1"
   subnet_ids = [aws_subnet.private-subnet-db1.id, aws_subnet.private-subnet-db2.id]
 
   tags = {

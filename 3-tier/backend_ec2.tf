@@ -1,6 +1,6 @@
 resource "aws_instance" "backend-server" {
-  ami           = "ami-0b6d9d3d33ba97d99" #ubuntu 20.04 LTS AMI ID for us-east-1
-  instance_type = "t3.micro"
+  ami           = "ami-02b64aa047cb5edf5" #ubuntu 20.04 LTS AMI ID for us-east-1
+  instance_type = "t3.small"
   subnet_id     = aws_subnet.private-subnet-app.id
   key_name      = aws_key_pair.three_tier_key.key_name # Replace with your key pair name
   vpc_security_group_ids = [aws_security_group.backend-sg.id]
